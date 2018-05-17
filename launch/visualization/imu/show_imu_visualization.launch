@@ -1,0 +1,4 @@
+<launch>
+	<node name="imu_visualization" pkg="autonomous_locomotor" type="display_3D_visualization.py" output="screen" />
+</launch>
+

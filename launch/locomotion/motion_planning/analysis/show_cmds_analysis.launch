@@ -1,0 +1,4 @@
+<launch>
+	<node name="plotter1" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_ref/linear/x /cmd_vel/linear/x /cmd_vel_smooth/linear/x /cmd_vel_modulated/linear/x " /> 
+	<node name="plotter2" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_ref/linear/y /cmd_vel/linear/y /cmd_vel_smooth/linear/y /cmd_vel_modulated/linear/y " /> 
+</launch>

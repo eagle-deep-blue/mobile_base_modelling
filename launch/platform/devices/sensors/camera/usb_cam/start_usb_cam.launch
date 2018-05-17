@@ -1,0 +1,17 @@
+<launch>
+  <arg name="device_id" default="/dev/video0" />
+
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+
+    <param name="video_device" value="$(arg device_id)" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="usb_cam" /> #possible values are mjpeg, yuyv, uyvy 
+
+    <param name="io_method" value="mmap"/> #possible values are mmap, userptr
+    <param name="framerate" value="30"/>
+
+  </node>
+
+</launch>

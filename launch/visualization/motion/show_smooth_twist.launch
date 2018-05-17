@@ -1,0 +1,5 @@
+<launch>
+	<node name="twist_x" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_smooth/linear/x /cmd_vel/linear/x" /> 
+	<node name="twist_y" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_smooth/linear/y /cmd_vel/linear/y" /> 
+	<node name="twist_theta" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_smooth/angular/z /cmd_vel/angular/z" /> 
+</launch>

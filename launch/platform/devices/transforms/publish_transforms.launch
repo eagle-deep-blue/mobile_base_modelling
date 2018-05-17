@@ -1,0 +1,7 @@
+<launch>
+    <node name="tf_footprint2baselink" pkg="tf" type="static_transform_publisher" args="0.0 0.0 0.05 0.0 0.0 0.0 /base_footprint /base_link 10" />
+	<node name="tf_baselink2laser" pkg="tf" type="static_transform_publisher" args="0.0 0.0 0.25 0.0 0.0 0.0 /base_link /laser_link 10" />
+
+    <!-- <node name="tf_baselink2IMU" pkg="tf" type="static_transform_publisher" args="-0.08 0.0 0.25 0.0 0.0 3.1415926 /base_link /IMU_link 10" /> -->
+        <!-- <node name="tf_baselink2camera" pkg="tf" type="static_transform_publisher" args="0.05 0.0 0.05 0.0 0.0 0.0 /base_link /camera_link 10" /> -->
+</launch>

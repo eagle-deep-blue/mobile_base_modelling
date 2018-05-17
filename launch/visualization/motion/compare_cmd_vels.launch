@@ -1,0 +1,5 @@
+<launch>
+	<node name="x_visualizer" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_smooth/linear/x /cmd_vel_modulated/linear/x" />
+	<node name="y_visualizer" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_smooth/linear/y /cmd_vel_modulated/linear/y" />
+	<node name="theta_visualizer" pkg="rqt_plot" type="rqt_plot" args="/cmd_vel_smooth/angular/z /cmd_vel_modulated/angular/z" />
+</launch>

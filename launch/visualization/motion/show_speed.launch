@@ -1,0 +1,5 @@
+<launch>
+    <arg name="cmd_vel" value="mobile_base/commands/velocity" />
+    <node name="speed_visualizer" pkg="rqt_plot" type="rqt_plot" args="$(arg cmd_vel)/linear/x $(arg cmd_vel)/angular/z" />   
+</launch>
+

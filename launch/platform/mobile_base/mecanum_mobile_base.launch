@@ -1,0 +1,18 @@
+<launch>
+	<arg name="use_real_encoder" value="false"/>
+	<arg name="real_encoder" value="" />
+	<arg name="logging" value="false" />
+
+	<node name="mobile_base_node" pkg="autonomous_locomotor" type="mecanum_mobile_base_node" respawn="true" respawn_delay="10" output="screen" >
+	    <param name="motor_max_speed" value="62.8" />
+	    <param name="motor_min_speed" value="3.14" />
+	    <param name="pub_tf" value="true" />
+	    <param name="topic_cmd_vel" value="cmd_vel_smooth" />
+	    <param name="topic_joint_cmd_vel" value="joint_cmd_vel" />
+	    <param name="topic_odometry" value="odom" />
+	    <param name="topic_encoder" value="$(arg real_encoder)" if="$(arg use_real_encoder)" /> 
+	    <param name="topic_encoder" value="fake_joint_disp" unless="$(arg use_real_encoder)" /> 
+	</node> 
+
+	<node name="fake_encoder" pkg="autonomous_locomotor" type="fake_wheel_encoder_node" unless="$(arg use_real_encoder)" />
+</launch>

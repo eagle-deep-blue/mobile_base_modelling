@@ -1,0 +1,7 @@
+<launch>
+	<arg name="file_dir" value="$(env PKG_DIR)/launch/devices/sensors" />
+
+	<include file="$(arg file_dir)/lidar/rplidar/start_rplidar.launch" /> 
+	<!-- <include file="$(arg file_dir)/imu/gy85/start_imu_yaw.launch" /> -->
+</launch>
+

@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find openni2_launch)/launch/openni2.launch" />
+    <param name="/camera/driver/depth_registration" value="true" />
+</launch>

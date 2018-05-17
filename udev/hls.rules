@@ -1,0 +1,4 @@
+# set the udev rule , make the device_port be fixed by razor_imu_9dof
+#
+KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="666", SYMLINK+="hls_lidar"
+

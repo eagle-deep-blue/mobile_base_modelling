@@ -1,0 +1,6 @@
+<launch>
+	<node name="velocity_smoother" pkg="autonomous_locomotor" type="velocity_smoother_node" output="log">
+		<param name="value_increment_linear" type="double" value="0.1" />
+		<param name="value_increment_angular" type="double" value="0.15" />
+	</node>
+</launch>

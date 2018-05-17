@@ -1,0 +1,5 @@
+<launch>
+	<arg name="BASE_DIR" value="$(env PKG_DIR)/launch/visualization" />
+
+	<node name="visualizer" pkg="rviz" type="rviz" args="-d $(arg BASE_DIR)/rviz/odom.rviz"/>
+</launch>

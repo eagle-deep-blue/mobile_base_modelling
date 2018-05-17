@@ -1,0 +1,4 @@
+<launch>
+	<node name="visualizer" pkg="rviz" type="rviz" args="-d $(env PKG_DIR)/launch/visualization/rviz/navigation_traj_planner.rviz"/> 
+    <include file="$(env PKG_DIR)/launch/visualization/motion/show_speed.launch" />
+</launch>

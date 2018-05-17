@@ -1,0 +1,6 @@
+<launch>
+	<node name="local_controller" pkg="$(env LOCOMOTION_PKG_NAME)" type="cubic_spline_local_planner" output="screen" >
+		<param name="topic_cmd_vel" value="cmd_vel" />
+		<param name="coefficient_control" value="0.0" />
+	</node>
+</launch>

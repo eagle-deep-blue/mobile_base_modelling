@@ -1,0 +1,10 @@
+<launch>
+
+    <arg name="port_imu" value="/dev/gy85" /> 
+
+    <node name="imu_driver" pkg="sprite_robot" type="imu_auto.py" output="screen" >
+        <param name="port" value="$(arg port_imu)" />
+        <param name="baudrate" value="57600" />
+        <param name="imu_frame" value="IMU_link" />
+    </node>
+</launch>
