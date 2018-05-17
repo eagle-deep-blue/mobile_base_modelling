@@ -108,9 +108,6 @@ target_link_libraries(perception_imu_rgb_node
  target_link_libraries(test_synchronization ${catkin_LIBRARIES})
                                                                                                     
 #---------------------------------------------------------------------------------------
-add_executable(reactive_controller src/${CONTROLLER}/reactive_controller.cpp)
-target_link_libraries(reactive_controller ${catkin_LIBRARIES})
-
 add_executable(velocity_smoother_node src/${CONTROLLER}/velocity_smoother.cpp)                    
 target_link_libraries(velocity_smoother_node ${catkin_LIBRARIES})
 
