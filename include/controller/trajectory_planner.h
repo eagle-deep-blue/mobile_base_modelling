@@ -3,7 +3,7 @@
  * 		and the case through multiple way-points.
  *
  * ----  Developer: Solomon Jingchun YIN, jingchun.yin@live.com
- * ----  Date:    Jan 11, 2018@ partnerX Robotics Corp., Shanghai, P.R.China;
+ * ----  Date:    Jan 11, 2018
  */
 
 #ifndef TRAJECTORY_PLANNER_H_

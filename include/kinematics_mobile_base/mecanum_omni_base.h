@@ -10,7 +10,7 @@
  *      before it is sent to the motor for actuation.
  *
  * ----  Developer: Solomon Jingchun YIN, jingchun.yin@live.com
- * ----  Date:    Nov-25th, 2017 @ partnerX Robotics Corp., Shanghai, P.R.China;
+ * ----  Date:    Nov-25th, 2017 
  *
  */
 
